@@ -1,0 +1,9 @@
+trigger:
+  branches:
+    include:
+    - azure-ci
+    - oce-patches
+
+jobs:
+- job: oce-build
+  timeoutInMinutes: 120
