@@ -80,7 +80,7 @@ script:
   - mkdir cmake-build
   - cd cmake-build
   - cmake .. -DUSE_VTK=$USE_VTK -USE_FREEIMAGE=ON -DBUILD_USE_PCH=ON
-  - make -j3
+  - make -j3 | grep Built
   - sudo make install
 
 after_script:
